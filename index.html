@@ -1,65 +1,222 @@
-# <p align="center">✨ ¡Hola! Soy Elmer Palacios ✨</p>
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=TU_USUARIO_AQUI&color=ff0055&style=flat-square&label=VISITAS+AL+PERFIL" alt="vistas" />
-</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Elmer Palacios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --text: #334155;
+            --bg: #f8fafc;
+        }
 
----
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
 
-## 🚀 Sobre mí 
-<img align="right" width="250" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3bmZ3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif">
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
 
-- 💡 **Enfoque:** Desarrollador **Full Stack** con pasión por la eficiencia.
-- 🐍 **Especialista:** Dominio avanzado de **Python** y arquitectura en **Java**.
-- ☁️ **Cloud:** Implementando soluciones escalables en **AWS**.
-- 🛠️ **Filosofía:** "Código limpio, mente clara".
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
 
----
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
 
-## ⚡ Superpoderes Tecnológicos
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
 
-### 💻 Lenguajes & Backend
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&color=3776AB)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&color=ED8B00)
-![FullStack](https://img.shields.io/badge/Full_Stack-FF0055?style=for-the-badge&logo=data:image/png;base64,...)
+        section {
+            margin-bottom: 2.5rem;
+        }
 
-### ☁️ Infraestructura
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white&color=FF9900)
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--dark);
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
 
----
+        .profile-list {
+            list-style: none;
+            padding: 0;
+        }
 
-## 🌟 Proyectos Universo Elmer
+        .profile-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
 
-> [!TIP]
-> ### 💓 Heart Sensor
-> **Análisis de salud en tiempo real.** Un sistema IOT enfocado en el procesamiento de datos biométricos usando **Python**.
+        .profile-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
 
-> [!IMPORTANT]
-> ### 🎵 Nutri Player
-> **Plataforma Full Stack.** Educación nutricional interactiva con una interfaz moderna y vibrante.
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
 
-> [!CAUTION]
-> ### 🎮 Tetris Pro
-> **Lógica Pura.** Recreación del clásico con algoritmos optimizados en **Java**.
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
 
----
+        th {
+            background-color: #f1f5f9;
+            color: var(--dark);
+        }
 
-## 📊 Mis Estadísticas (Nivel Pro)
+        .tech-tag {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
 
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO_AQUI&show_icons=true&theme=radical&hide_border=false&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO_AQUI&layout=compact&theme=radical&hide_border=false" />
-</p>
+        /* Botón de Temario */
+        .btn-container {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
 
----
+        .btn-cv {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
 
-## 📬 ¡Conectemos en la Galaxia Digital!
+        .btn-cv:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
 
-<p align="center">
-<a href="https://linkedin.com/in/TU_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:tu-email@ejemplo.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
+        .social-links {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
 
----
-<p align="center">
-  Hecho con ✨ por <b>Elmer Palacios</b>
-</p>
+    <div class="container">
+        <header>
+            <h1>Hola, soy Elmer Palacios 👋</h1>
+            <p class="subtitle">Desarrollador Full Stack | Especialista en Python y Java | Entusiasta de AWS</p>
+        </header>
+
+        <section>
+            <h2>👨‍💻 Sobre mí</h2>
+            <ul class="profile-list">
+                <li>Desarrollador profesional enfocado en la creación de aplicaciones escalables y soluciones eficientes en la nube. Combina la agilidad de <strong>Python</strong> con la robustez de <strong>Java</strong> para entregar software de alta calidad.</li>
+                <li>☁️ Experiencia trabajando con <strong>AWS</strong> para el despliegue y gestión de aplicaciones.</li>
+                <li>🏗️ Enfoque sólido en desarrollo <strong>Full Stack</strong>.</li>
+                <li>🎯 Comprometido con las buenas prácticas, el código limpio y la arquitectura de software.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🛠️ Stack Tecnológico</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+                    <strong>Lenguajes y Backend</strong><br>
+                    Python, Java, Node.js
+                </div>
+                <div style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+                    <strong>Nube e Infraestructura</strong><br>
+                    AWS (EC2, S3, Lambda), Docker
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚀 Proyectos destacados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Descripción</th>
+                        <th>Tecnologías</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sensor cardíaco</strong></td>
+                        <td>Monitoreo de salud y análisis en tiempo real.</td>
+                        <td><span class="tech-tag">Python / IoT</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reproductor Nutri</strong></td>
+                        <td>Plataforma multimedia de educación nutricional.</td>
+                        <td><span class="tech-tag">Full Stack</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tetris</strong></td>
+                        <td>Clásico moderno con lógica optimizada.</td>
+                        <td><span class="tech-tag">Java</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>📊 Estadísticas de GitHub</h2>
+            <p style="color: #64748b; font-style: italic;">[Aquí puedes insertar tu widget de GitHub Stats o una imagen de tus repositorios]</p>
+        </section>
+
+        <section class="social-links">
+            <h2>🤝 Conectemos</h2>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+        </section>
+
+        <div class="btn-container">
+            <a href="temario.html" class="btn-cv">Ver Temario de la Materia</a>
+        </div>
+    </div>
+
+</body>
+</html>
