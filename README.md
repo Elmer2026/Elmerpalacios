@@ -1,68 +1,225 @@
-# Hola, soy Elmer Palacios 👋
-**Desarrollador Full Stack | Especialista en Python y Java | Entusiasta de AWS**
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Elmer Palacios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --text: #334155;
+            --bg: #f8fafc;
+        }
 
----
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
 
-### 👨‍💻 Sobre mí
-Desarrollador profesional enfocado en la creación de aplicaciones escalables y soluciones eficientes en la nube. Combino la agilidad de **Python** con la robustez de **Java** para entregar software de alta calidad.
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
 
-- ☁️ Experiencia trabajando con **AWS** para el despliegue y gestión de aplicaciones.
-- 🏗️ Enfoque sólido en desarrollo **Full Stack**.
-- 🎯 Comprometido con las buenas prácticas, el código limpio y la arquitectura de software.
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
 
----
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
 
-### 🛠️ Stack Tecnológico
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
 
-**Lenguajes y Backend**
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+        section {
+            margin-bottom: 2.5rem;
+        }
 
-**Nube e Infraestructura**
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--dark);
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
 
----
+        .profile-list {
+            list-style: none;
+            padding: 0;
+        }
 
-### 🚀 Proyectos Destacados
+        .profile-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
 
-| Proyecto | Descripción | Tecnologías |
-| :--- | :--- | :--- |
-| **Heart Sensor** | Sistema de monitoreo de salud y análisis de datos en tiempo real. | Python / IoT |
-| **Nutri Player** | Plataforma multimedia enfocada en la educación nutricional. | Full Stack |
-| **Tetris** | Implementación moderna del juego clásico con lógica optimizada. | Java |
+        .profile-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
 
----
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
 
-### 📊 Estadísticas de GitHub
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO_AQUI&show_icons=true&theme=dark&include_all_commits=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO_AQUI&layout=compact&theme=dark" />
-</p>
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
 
-<a href="menú.html" class="btn-cv">
-    ver Temario de la Materia
-</a>
+        th {
+            background-color: #f1f5f9;
+            color: var(--dark);
+        }
 
-<style>
-    .btn-cv {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #2563eb; /* Azul profesional */
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        transition: background 0.3s ease;
-        border: none;
-        cursor: pointer;
-    }
+        .tech-tag {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
 
-    .btn-cv:hover {
-        background-color: #1d4ed8;
-        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-    }
-</style>
+        /* Botón de Temario */
+        .btn-container {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .btn-cv {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-cv:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        .social-links {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hola, soy Elmer Palacios 👋</h1>
+            <p class="subtitle">Desarrollador Full Stack | Especialista en Python y Java | Entusiasta de AWS</p>
+        </header>
+
+        <section>
+            <h2>👨‍💻 Sobre mí</h2>
+            <ul class="profile-list">
+                <li>Desarrollador profesional enfocado en la creación de aplicaciones escalables y soluciones eficientes en la nube. Combina la agilidad de <strong>Python</strong> con la robustez de <strong>Java</strong> para entregar software de alta calidad.</li>
+                <li>☁️ Experiencia trabajando con <strong>AWS</strong> para el despliegue y gestión de aplicaciones.</li>
+                <li>🏗️ Enfoque sólido en desarrollo <strong>Full Stack</strong>.</li>
+                <li>🎯 Comprometido con las buenas prácticas, el código limpio y la arquitectura de software.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🛠️ Stack Tecnológico</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+                    <strong>Lenguajes y Backend</strong><br>
+                    Python, Java, Node.js
+                </div>
+                <div style="background: #f8fafc; padding: 15px; border-radius: 8px;">
+                    <strong>Nube e Infraestructura</strong><br>
+                    AWS (EC2, S3, Lambda), Docker
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🚀 Proyectos destacados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Descripción</th>
+                        <th>Tecnologías</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sensor cardíaco</strong></td>
+                        <td>Monitoreo de salud y análisis en tiempo real.</td>
+                        <td><span class="tech-tag">Python / IoT</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reproductor Nutri</strong></td>
+                        <td>Plataforma multimedia de educación nutricional.</td>
+                        <td><span class="tech-tag">Full Stack</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tetris</strong></td>
+                        <td>Clásico moderno con lógica optimizada.</td>
+                        <td><span class="tech-tag">Java</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>📊 Estadísticas de GitHub</h2>
+            <p style="color: #64748b; font-style: italic;">[Aquí puedes insertar tu widget de GitHub Stats o una imagen de tus repositorios]</p>
+        </section>
+
+        <section class="social-links">
+            <h2>🤝 Conectemos</h2>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+        </section>
+
+        <div class="btn-container">
+            <a href="temario.html" class="btn-cv">Ver Temario de la Materia</a>
+        </div>
+    </div>
+
+</body>
+</html>
 
 ---
 
