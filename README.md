@@ -39,6 +39,31 @@ Desarrollador profesional enfocado en la creación de aplicaciones escalables y 
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO_AQUI&layout=compact&theme=dark" />
 </p>
 
+<a href="temario.html" class="btn-cv">
+    ver Temario de la Materia
+</a>
+
+<style>
+    .btn-cv {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #2563eb; /* Azul profesional */
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        transition: background 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-cv:hover {
+        background-color: #1d4ed8;
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    }
+</style>
+
 ---
 
 ### 🤝 Conectemos
