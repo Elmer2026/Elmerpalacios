@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web Full Stack - Temario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #64748b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #38bdf8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, #0f172a 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .grid-temario {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid-temario { grid-template-columns: 1fr; }
+        }
+
+        .modulo-card {
+            background: white;
+            border-left: 5px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .modulo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .modulo-number {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .modulo-title {
+            font-size: 1.4rem;
+            margin: 0.5rem 0 1rem 0;
+            color: var(--dark);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .sub-list {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        .sub-list li::before {
+            content: "•";
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Desarrollo Web Full Stack</h1>
+        <p>Dominando el ecosistema digital desde el diseño de interfaces hasta la arquitectura del servidor.</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Propósito del Curso</h2>
+            <p>Esta materia proporciona las habilidades técnicas necesarias para construir aplicaciones web modernas, escalables y eficientes, utilizando las herramientas estándar de la industria como Angular, Node.js y patrones de arquitectura avanzada.</p>
+        </section>
+
+        <div class="grid-temario">
+            <article class="modulo-card">
+                <span class="modulo-number">Módulo 1</span>
+                <h3 class="modulo-title">Fundamentos del Desarrollo</h3>
+                <ul>
+                    <li>Roles: Front-End, Back-End y Full Stack.</li>
+                    <li>Arquitectura cliente-servidor y SDN en capas.</li>
+                    <li>Navegadores, hosting y dominios.</li>
+                    <li>Herramientas clave:
+                        <ul class="sub-list">
+                            <li>Control de versiones con Git y GitHub.</li>
+                            <li>CI/CD con GitHub Actions.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="modulo-card">
+                <span class="modulo-number">Módulo 2</span>
+                <h3 class="modulo-title">Interfaces Web Modernas</h3>
+                <ul>
+                    <li>HTML5 semántico y estructura.</li>
+                    <li>CSS3 avanzado y Modelo de Caja.</li>
+                    <li>Frameworks: Bootstrap y Tailwind CSS.</li>
+                    <li>Accesibilidad Web (WCAG).</li>
+                    <li>Diseño adaptativo y Responsive Design.</li>
+                </ul>
+            </article>
+
+            <article class="modulo-card">
+                <span class="modulo-number">Módulo 3</span>
+                <h3 class="modulo-title">Arquitectura Back-End</h3>
+                <ul>
+                    <li>Patrones Creacionales:
+                        <ul class="sub-list"><li>Singleton, Factory Method.</li></ul>
+                    </li>
+                    <li>Patrones Estructurales:
+                        <ul class="sub-list"><li>Adapter, Decorator, Composite.</li></ul>
+                    </li>
+                    <li>Patrones de Comportamiento:
+                        <ul class="sub-list"><li>Observer, State.</li></ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="modulo-card">
+                <span class="modulo-number">Módulo 4</span>
+                <h3 class="modulo-title">Desarrollo con Angular</h3>
+                <ul>
+                    <li>Componentes, templates y servicios.</li>
+                    <li>Protocolo HTTP y métodos (GET, POST, etc.).</li>
+                    <li>Backend-as-a-Service con Firebase.</li>
+                    <li>Formularios reactivos y validaciones.</li>
+                    <li>Ruteo y navegación entre vistas.</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Programa de Ingeniería de Software | Desarrollo Full Stack
+    </footer>
+
+</body>
+</html>
