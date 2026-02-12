@@ -39,7 +39,7 @@ Desarrollador profesional enfocado en la creación de aplicaciones escalables y 
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO_AQUI&layout=compact&theme=dark" />
 </p>
 
-<a href="temario.html" class="btn-cv">
+<a href="menú.html" class="btn-cv">
     ver Temario de la Materia
 </a>
 
